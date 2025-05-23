@@ -18,3 +18,5 @@ COPY --from=composer:2.5.5 /usr/bin/composer /usr/bin/composer
 
 # Setup Application
 WORKDIR /var/www/
+RUN composer install --optimize-autoloader --no-dev && \
+    chmod -R 777 storage bootstrap/cache
