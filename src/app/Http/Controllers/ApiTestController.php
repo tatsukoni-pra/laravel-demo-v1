@@ -7,7 +7,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Log;
 use Exception;
 
-class TestTableController extends Controller
+class ApiTestController extends Controller
 {
     /**
      * レコードを1件取得
@@ -47,5 +47,4 @@ class TestTableController extends Controller
             ], 500);
         }
     }
-
 }
